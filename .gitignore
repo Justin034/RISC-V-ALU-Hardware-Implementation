@@ -1,1 +1,146 @@
+# ============================================================
+# RISC-V CPU
+# VHDL + Intel Quartus + DE1-SoC + ModelSim/Questa
+# ============================================================
 
+
+# ============================================================
+# Operating System
+# ============================================================
+
+.DS_Store
+.DS_Store?
+._*
+Thumbs.db
+Desktop.ini
+
+
+# ============================================================
+# Editors / IDEs
+# ============================================================
+
+.vscode/
+.idea/
+
+*.swp
+*.swo
+*~
+*.bak
+
+
+# ============================================================
+# Intel Quartus - Generated Files
+# ============================================================
+
+# Quartus compilation database
+db/
+incremental_db/
+
+# Quartus compilation output
+output_files/
+
+# Quartus generated simulation directory
+# Keep your own testbenches in /tb instead
+fpga/**/simulation/
+
+# Quartus workspace
+*.qws
+
+# Quartus databases
+*.qdb
+
+# Quartus reports
+*.rpt
+*.summary
+*.smsg
+
+# Quartus generated programming files
+*.sof
+*.pof
+*.jic
+*.jdi
+
+# Quartus generated assignment/report files
+*.pin
+*.cmp
+
+# Other Quartus generated files
+*.done
+
+
+# ============================================================
+# ModelSim / Questa
+# ============================================================
+
+# Compiled VHDL simulation library
+simulation/work/
+
+# If ModelSim creates work elsewhere
+work/
+
+# Simulator transcript
+transcript
+
+# Waveform files
+*.wlf
+*.vcd
+*.fst
+
+# ModelSim/Questa generated configuration
+modelsim.ini
+
+# Compiled simulator libraries
+*_lib/
+
+# Simulator temporary files
+*.dat
+*.idx
+
+
+# ============================================================
+# General Simulation Output
+# ============================================================
+
+simulation/transcript
+simulation/*.wlf
+simulation/*.vcd
+simulation/*.fst
+
+# Temporary simulation files
+*.log
+*.tmp
+*.temp
+
+
+# ============================================================
+# Build Artifacts
+# ============================================================
+
+build/
+out/
+dist/
+
+*.o
+*.a
+
+
+# ============================================================
+# RISC-V Firmware Build Artifacts
+# ============================================================
+
+# If you later compile software for your CPU
+firmware/build/
+
+*.elf
+*.hex
+*.bin
+*.map
+
+
+# ============================================================
+# Temporary Files
+# ============================================================
+
+*.tmp
+*.temp
+*.cache
