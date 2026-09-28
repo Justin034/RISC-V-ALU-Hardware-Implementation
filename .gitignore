@@ -144,3 +144,5 @@ firmware/build/
 *.tmp
 *.temp
 *.cache
+
+c5_pin_model_dump.txt

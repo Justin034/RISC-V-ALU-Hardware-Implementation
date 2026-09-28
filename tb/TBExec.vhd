@@ -85,7 +85,7 @@ begin
 		  variable v_SPACE : character;
 		  variable StartTime, EndTime, PropDelay : time;
     begin
-			file_open(file_VECTORS, "Exec00.tvs", read_mode);
+			file_open(file_VECTORS, "../tb/Exec00.tvs", read_mode);
 			report "Now simulating" severity note;
         while not endfile(file_VECTORS) loop
 		      A_tb <= (others => 'X');

@@ -5,21 +5,22 @@ quit -sim
 transcript file ExUFuncTranscript.txt
 
 # Compile the source code in the correct order
-vcom -work work -2008 -explicit -stats=none TBExec.vhd
-vcom -work work -2008 -explicit -stats=none ../SourceCode/EN_SLL64.vhd
-vcom -work work -2008 -explicit -stats=none ../SourceCode/EN_SRL64.vhd
-vcom -work work -2008 -explicit -stats=none ../SourceCode/EN_SRA64.vhd
-vcom -work work -2008 -explicit -stats=none ../SourceCode/EN_Shifter.vhd
-vcom -work work -2008 -explicit -stats=none ../SourceCode/EN_Adder.vhd
-vcom -work work -2008 -explicit -stats=none ../SourceCode/ExecUnit.vhd
-vcom -work work -2008 -explicit -stats=none ../SourceCode/ExecConfig.vhd
+vcom -work work -2008 -explicit -stats=none ../tb/TBExec.vhd
+vcom -work work -2008 -explicit -stats=none ../rtl/EN_SLL64.vhd
+vcom -work work -2008 -explicit -stats=none ../rtl/EN_SRL64.vhd
+vcom -work work -2008 -explicit -stats=none ../rtl/EN_SRA64.vhd
+vcom -work work -2008 -explicit -stats=none ../rtl/EN_Logic.vhd
+vcom -work work -2008 -explicit -stats=none ../rtl/EN_Shifter.vhd
+vcom -work work -2008 -explicit -stats=none ../rtl/EN_Adder.vhd
+vcom -work work -2008 -explicit -stats=none ../rtl/ExecUnit.vhd
+vcom -work work -2008 -explicit -stats=none ../rtl/ExecConfig.vhd
 
 
 # Start the simulation with logging to the transcript
 vsim -gui work.config_functional
 
 # Setup the wave window using a separate script
-do wave.do
+do scripts/wave.do
 
 # Turn on the wave view
 view wave
